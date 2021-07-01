@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivitySignIn"
+    android:background="@color/ashen_black">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:background="@drawable/bg_wave2"></View>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/instagram"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="55dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:background="@color/ashen_black">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:startIconDrawable="@drawable/ic_baseline_mail"
+                    app:startIconTint="@color/white"
+                    style="@style/TextInputLayoutStyle"
+                    android:textColorHint="@color/white">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email"
+                        android:id="@+id/input_email"
+                        android:textColor="@color/white"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:startIconDrawable="@drawable/ic_baseline_vpn_key"
+                    app:endIconMode="password_toggle"
+                    app:startIconTint="@color/white"
+                    style="@style/TextInputLayoutStyle"
+                    android:textColorHint="@color/white"
+                    app:endIconTint="@color/white">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:hint="Password"
+                        android:id="@+id/input_password"
+                        android:textColor="@color/white"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:text="Login"
+                    android:id="@+id/btn_login"
+                    android:padding="12dp"
+                    android:background="@drawable/white_rounded_button"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:text="Sign Up"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:id="@+id/link_signup"
+                    android:textColor="#8e44ad"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/progressBar"
+        android:progressTint="@color/colorPrimaryDark"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please wait..."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_alignBottom="@+id/progressBar"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignLeft="@+id/progressBar"
+        android:id="@+id/pleaseWait"/>
+
+
+</RelativeLayout>

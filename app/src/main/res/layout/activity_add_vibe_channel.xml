@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.AddGroup"
+    android:orientation="vertical"
+    android:background="@color/ashen_black">
+
+
+    <ImageView
+        android:id="@+id/Channelbg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icons8_add_image_96"
+        android:scaleType="centerCrop"></ImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/TextInputLayoutStyle"
+        android:textColorHint="@color/white">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vibe Channel Name"
+            android:id="@+id/CHname"
+            android:textColor="@color/white"
+            android:textColorHint="#fff" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Attach"
+        android:id="@+id/SelectContent"
+        android:background="@drawable/roundbg"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_attach_file_24"
+        android:paddingLeft="10dp"
+        android:drawableTint="@color/white"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Create"
+        android:id="@+id/CreateCH"
+        android:background="@drawable/roundbg"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_add_24"
+        android:paddingLeft="10dp"
+        android:drawableTint="@color/white"/>
+
+</LinearLayout>

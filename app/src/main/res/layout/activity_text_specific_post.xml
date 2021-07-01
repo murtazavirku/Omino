@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.VideoSpecificPost"
+    android:orientation="vertical"
+    android:background="@color/ashen_black">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/Musiccaption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caption"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:fontFamily="@font/roboto_bold"></TextView>
+        <ImageView
+            android:id="@+id/subUser"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_heart"
+            app:tint="@color/grey"
+            android:layout_marginLeft="10dp"></ImageView>
+    </LinearLayout>
+
+
+
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="400dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></WebView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/MusicAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="loading.."
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:fontFamily="@font/roboto_bold"></TextView>
+            <ImageView
+                android:id="@+id/savePost"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_heart"
+                app:tint="@color/grey"
+                android:layout_marginLeft="10dp"></ImageView>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="5dp">
+
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/thinking"
+            app:tint="@color/white"></ImageView>
+        <ImageView
+            android:id="@+id/likePost"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/hand_peace"
+            app:tint="@color/white"></ImageView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:paddingTop="@dimen/spacing_medium" android:paddingBottom="@dimen/spacing_medium" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollingCache="true"/>
+            <View android:background="@drawable/bg_gradient_soft" android:layout_width="match_parent" android:layout_height="2dp" android:layout_alignParentTop="true" android:rotation="180"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/spacing_medium" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_weight="1" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="18dp" app:cardElevation="1dp">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="40dp">
+                    <EditText android:id="@+id/text_content" android:background="@android:color/transparent" android:padding="@dimen/spacing_middle" android:layout_width="0dp" android:layout_height="match_parent" android:hint="Write a comment..." android:layout_weight="1" android:imeOptions="actionSearch"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <ImageView android:id="@+id/btn_send" android:layout_width="40dp" android:layout_height="40dp"  android:layout_marginRight="10dp" android:layout_marginTop="10dp" android:background="@drawable/roundbg"  android:src="@drawable/play_arrow" android:padding="6dp"/>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

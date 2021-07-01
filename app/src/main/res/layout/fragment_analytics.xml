@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentAnalytics">
+
+
+    <androidx.core.widget.NestedScrollView android:id="@+id/scrollview_fragment_analytics" android:background="@color/ashen_black" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:scrollingCache="true" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="0dp" app:cardElevation="1dp">
+                <LinearLayout android:background="@color/ashen_black" android:orientation="vertical" android:paddingTop="@dimen/spacing_middle" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_large" android:layout_marginTop="@dimen/spacing_large" android:layout_marginBottom="@dimen/spacing_middle" android:text="Analytics" android:layout_marginStart="@dimen/spacing_large"/>
+                    <View android:background="@color/grey_80" android:layout_marginBottom="20dp" android:layout_width="match_parent" android:layout_height="1px"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="6dp">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/activity_main_period_radiogroup">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Engagements"
+                                android:textSize="12dp"
+                                android:textColor="@color/white"/>
+
+                            <RadioButton
+                                android:id="@+id/activity_main_periodV"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11dp"
+                                android:text="Views"
+                                android:textColor="@color/white"/>
+
+                            <RadioButton
+                                android:id="@+id/activity_main_periodS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11dp"
+                                android:text="Snaps"
+                                android:textColor="@color/white"/>
+
+                            <RadioButton
+                                android:id="@+id/activity_main_periodB"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11dp"
+                                android:text="Burbs"
+                                android:textColor="@color/white"/>
+
+                            <RadioButton
+                                android:id="@+id/activity_main_periodC"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="11dp"
+                                android:text="Clicks"
+                                android:textColor="@color/white"/>
+                        </RadioGroup>
+
+
+<!--                        <LinearLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:orientation="horizontal">-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:text="Price Data Sets"-->
+<!--                                android:textSize="18sp"/>-->
+
+<!--                            <CheckBox-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:id="@+id/activity_main_high"-->
+<!--                                android:text="High"/>-->
+
+<!--                            <CheckBox-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:id="@+id/activity_main_low"-->
+<!--                                android:text="Low"/>-->
+
+<!--                            <CheckBox-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:id="@+id/activity_main_close"-->
+<!--                                android:text="Close"/>-->
+
+<!--                        </LinearLayout>-->
+                   </LinearLayout>
+
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/activity_main_linechart"
+                        android:layout_width="match_parent"
+                        android:paddingTop="4dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/rectangle"
+                        android:layout_height="400dp" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/activity_main_priceinterval">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time"
+                            android:textSize="12dp"
+                            android:textColor="@color/white"/>
+
+                        <RadioButton
+                            android:id="@+id/activity_main_interval1h"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11dp"
+                            android:text="Hour"
+                            android:textColor="@color/white"/>
+
+                        <RadioButton
+                            android:id="@+id/activity_main_interval1d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11dp"
+                            android:text="Day"
+                            android:textColor="@color/white"/>
+<!--                        <RadioButton-->
+<!--                            android:id="@+id/activity_main_interval1w"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:textSize="11dp"-->
+<!--                            android:text="Week"-->
+<!--                            android:textColor="@color/white"/>-->
+
+                        <RadioButton
+                            android:id="@+id/activity_main_interval1m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11dp"
+                            android:text="Month"
+                            android:textColor="@color/white"/>
+                        <RadioButton
+                            android:id="@+id/activity_main_interval1y"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="11dp"
+                            android:text="Year"
+                            android:textColor="@color/white"/>
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:text="Refresh"
+                        android:textColor="@color/white"
+                        android:layout_margin="10dp"
+                        android:textSize="10dp"
+                        android:id="@+id/activity_main_getprices" />
+
+                    <!--                    <Button-->
+<!--                        android:layout_width="160dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_margin="10dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:shadowColor="@color/colorPrimaryDark"-->
+<!--                        android:shadowDy="100"-->
+<!--                        android:shadowDx="100"-->
+<!--                        android:shadowRadius="100"-->
+<!--                        android:text="Upload"-->
+<!--                        ></Button>-->
+                    <View android:background="@color/grey_10" android:layout_width="match_parent" android:layout_height="1px"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <View android:layout_width="match_parent" android:layout_height="@dimen/spacing_middle"/>
+            <androidx.cardview.widget.CardView android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="0dp" app:cardElevation="1dp">
+                <LinearLayout android:background="@color/ashen_black" android:orientation="vertical" android:paddingTop="@dimen/spacing_middle" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:layout_gravity="center" android:textSize="12dp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:layout_marginBottom="@dimen/spacing_middle" android:text="Select From Your Posts" />
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/fa_et_nameOfPiece"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:startIconTint="@color/white"
+                        style="@style/TextInputLayoutStyle"
+                        android:textColorHint="@color/white">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="11dp"
+                            android:hint="Name of Piece"
+                            android:textColor="@color/white"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View android:background="@color/grey_10" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="4dp" android:layout_marginRight="4dp"/>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/fa_et_catagory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:startIconTint="@color/white"
+                        style="@style/TextInputLayoutStyle"
+                        android:textColorHint="@color/white">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="11dp"
+                            android:hint="Category"
+                            android:textColor="@color/white"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <View android:background="@color/grey_10"  android:layout_width="match_parent" android:layout_marginBottom="10dp" android:layout_height="2dp" />
+
+            <ProgressBar
+                android:id="@+id/postProgress"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:indeterminateTint="@color/grey_40"
+                android:layout_gravity="center_horizontal"
+                android:foregroundGravity="center_horizontal"></ProgressBar>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/news_feed_List"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:background="@color/ashen_black"
+                android:backgroundTint="@color/ashen_black"
+                ></androidx.recyclerview.widget.RecyclerView>
+            <!--            <androidx.cardview.widget.CardView android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="0dp" app:cardElevation="1dp">-->
+<!--                <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/spacing_middle" android:layout_width="match_parent" android:layout_height="wrap_content">-->
+<!--                    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textStyle="bold" android:textColor="@color/colorPrimaryDark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/spacing_large" android:layout_marginBottom="@dimen/spacing_middle" android:text="Tags" android:layout_gravity="center" />-->
+<!--                    <View android:background="@color/grey_80" android:layout_width="match_parent" android:layout_height="1px"/>-->
+<!--                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="?attr/selectableItemBackground" android:paddingLeft="@dimen/spacing_large" android:paddingRight="@dimen/spacing_large" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/spacing_xxlarge">-->
+<!--                      -->
+<!--                    </LinearLayout>-->
+<!--                    <View android:background="@color/grey_10" android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="1px"/>-->
+
+<!--                </LinearLayout>-->
+<!--            </androidx.cardview.widget.CardView>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:id="@+id/lnI">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_no_internet"
+                    android:layout_gravity="center_horizontal"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:text="No Internet Connection"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/white"></TextView>
+                <TextView
+                    android:id="@+id/tryagain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Try Again"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:textColor="#3498db"></TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</FrameLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gen_ripple_effect"
+    android:id="@+id/mainLayout">
+
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="groupid"
+        android:visibility="gone"></TextView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userimg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/userrrr"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"/>
+
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_toRightOf="@+id/userimg"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"></TextView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/userimg"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/lastmsg"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="..."
+            android:fontFamily="@font/roboto"
+            android:textSize="14dp"
+            android:textColor="@color/grey"></TextView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/groupBadge"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:cardCornerRadius="50dp"
+        app:cardBackgroundColor="#27ae60"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/newmsgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="11dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"></TextView>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:background="@drawable/bg_gradient_soft"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>

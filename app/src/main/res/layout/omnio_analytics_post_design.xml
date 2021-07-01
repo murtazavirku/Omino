@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ImageViewPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+         android:visibility="gone"
+        android:layout_margin="5dp"
+        android:backgroundTint="#FFF">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/postAnalytics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="analytics"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/postNft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="nft"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/postuserID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="userID"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/postuserMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="userMail"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/postID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PostID"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/posterImageUrl"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"/>
+<LinearLayout
+    android:id="@+id/omino_analytics_post_design_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ashen_black"
+    android:orientation="vertical">
+            <TextView
+                android:id="@+id/posterCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="caption text here" />
+
+            <TextView
+                android:id="@+id/postTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="tags"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                />
+
+</LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/VideoViewPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:backgroundTint="#FFF">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/VideoPostAnalytics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="analytics"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/VideoPostNft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="nft"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/VideoPostuserID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="userID"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/VideoPostuserMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="userMail"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/VideoPostID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PostID"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/videoURL"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentTop="true"/>
+
+                <ImageView
+                    android:id="@+id/videoPlayButton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_baseline_play_circle_outline_24"></ImageView>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/VideoCoverArt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CoverArt"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+
+<LinearLayout
+    android:id="@+id/omino_analytics_post_design_llVideo"
+    android:layout_width="match_parent"
+    android:background="@color/ashen_black"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+            <TextView
+                android:id="@+id/VideoPosterCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="caption text here"/>
+
+            <TextView
+                android:id="@+id/VideoPostTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="tags"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                />
+
+</LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/MusicViewPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:backgroundTint="#FFF">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/MusicPostAnalytics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="analytics"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/MusicPostNft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="nft"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/MusicPostuserID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="userID"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/MusicPostuserMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="userMail"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/MusicPostID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="PostID"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:id="@+id/MusicPlayerLayout"
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/MusicCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:scaleType="centerCrop"></ImageView>
+
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/MusicPost_play"
+                        android:clickable="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/spacing_medium"
+                        android:tint="@android:color/white"
+                        app:backgroundTint="#d35400"
+                        app:elevation="0dp"
+                        app:fabSize="normal"
+                        app:rippleColor="@android:color/white"
+                        app:srcCompat="@drawable/play_arrow"
+                        android:layout_centerInParent="true"/>
+                    <ProgressBar
+                        android:id="@+id/Music_progressbar"
+                        android:background="@drawable/circle_shape_music"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:max="1000"
+                        android:progress="0"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular_progress_bar_music"
+                        android:minWidth="75dp"
+                        android:minHeight="75dp"
+                        android:layout_centerInParent="true"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/omino_analytics_post_design_llMusic"
+                android:layout_width="match_parent"
+                android:background="@color/ashen_black"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/MusicPosterCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="caption text here"/>
+            <TextView
+                android:id="@+id/MusicPostTags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="tags"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/TextViewPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:backgroundTint="#FFF">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TextPostNft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="nft"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/TextPostuserID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="userID"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/TextPostuserMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="userMail"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/TextPostCover"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"></ImageView>
+
+                        <TextView
+                            android:id="@+id/TextPostText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="15dp"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:textColor="#2c3e50"
+                            android:layout_alignTop="@id/TextPostCover"
+                            android:layout_alignBottom="@+id/TextPostCover"
+                            android:layout_alignLeft="@+id/TextPostCover"
+                            android:layout_alignRight="@id/TextPostCover"
+                            android:inputType="textMultiLine"
+                            android:background="@drawable/transparent"
+                            android:hint="Loading..."></TextView>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+<LinearLayout
+    android:id="@+id/omino_analytics_post_design_llText"
+    android:layout_width="match_parent"
+    android:background="@color/ashen_black"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TextPosterCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="caption text here"/>
+    <TextView
+        android:id="@+id/TextPostTags"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="tags"
+        android:textColor="@color/grey"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        />
+        </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="start" android:orientation="horizontal" android:id="@+id/lyt_parent" android:paddingLeft="@dimen/spacing_middle" android:paddingTop="5dp" android:paddingRight="@dimen/spacing_middle" android:paddingBottom="1dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginEnd="5dp">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:minHeight="32dp" app:cardBackgroundColor="@color/grey_10" app:cardCornerRadius="5dp" app:cardElevation="1dp" app:cardUseCompatPadding="false">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_medium" android:paddingTop="@dimen/spacing_medium" android:paddingRight="@dimen/spacing_medium" android:paddingBottom="@dimen/spacing_medium" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="180dp">
+            <TextView
+                android:id="@+id/commentTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:fontFamily="@font/roboto_bold"></TextView>
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/commentMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_medium" android:layout_marginRight="@dimen/spacing_medium" android:text="Message content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View android:layout_width="15dp" android:layout_height="0dp"/>
+</LinearLayout>

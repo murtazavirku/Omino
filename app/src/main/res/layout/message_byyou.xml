@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="start" android:orientation="horizontal" android:id="@+id/lyt_parent" android:paddingLeft="@dimen/spacing_middle" android:paddingTop="2dp" android:paddingRight="@dimen/spacing_middle" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginEnd="5dp">
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3dp" android:minHeight="32dp" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="5dp" app:cardElevation="1dp" app:cardUseCompatPadding="false">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/spacing_medium" android:paddingTop="@dimen/spacing_medium" android:paddingRight="@dimen/spacing_medium" android:paddingBottom="@dimen/spacing_medium" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="180dp">
+            <TextView android:textAppearance="@style/TextAppearance.AppCompat.Subhead" android:textStyle="normal" android:textColor="@android:color/black" android:id="@+id/text_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spacing_medium" android:layout_marginRight="@dimen/spacing_medium" android:text="Message content"/>
+            <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="@color/grey_40" android:gravity="center" android:id="@+id/text_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="02:30 AM"/>
+                <View android:layout_width="@dimen/spacing_medium" android:layout_height="0dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <View android:layout_width="5dp" android:layout_height="0dp"/>
+</LinearLayout>

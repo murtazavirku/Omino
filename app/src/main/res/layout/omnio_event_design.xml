@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gen_ripple_effect"
+    android:id="@+id/mainLayout">
+
+
+    <TextView
+        android:id="@+id/groupid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="groupid"
+        android:visibility="gone"></TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/eventImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"/>
+
+
+    <TextView
+        android:id="@+id/eventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_toRightOf="@+id/eventImg"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"></TextView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/eventImg"
+        android:layout_below="@+id/eventName"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:fontFamily="@font/roboto"
+            android:textSize="14dp"
+            android:textColor="@color/grey"></TextView>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <View
+        android:background="@color/grey_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="3dp" android:orientation="vertical">
+
+    <com.balysv.materialripple.MaterialRippleLayout android:id="@+id/lyt_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:src="@drawable/ic_sand_clock" android:id="@+id/image" android:layout_width="match_parent" android:layout_height="120dp"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <ImageView
+        android:id="@+id/play_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/play_arrow"
+        app:tint="@color/grey"
+        android:layout_centerInParent="true"></ImageView>
+
+    <View
+        android:id="@+id/selected"
+        android:background="#a695a5a6"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/tikk"
+        android:src="@drawable/ic_baseline_done_24"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

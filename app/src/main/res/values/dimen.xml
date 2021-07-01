@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_xxlarge">50dp</dimen>
+    <dimen name="largeButtonSize">55dp</dimen>
+    <dimen name="smallButtonSize">40dp</dimen>
+    <dimen name="fiveDP">5dp</dimen>
+    <dimen name="zeroDP">0dp</dimen>
+    <dimen name="tenDP">10dp</dimen>
+</resources>

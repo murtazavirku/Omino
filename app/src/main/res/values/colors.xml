@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#2980b9</color>
+    <color name="colorAccentDark">#2980b9</color>
+    <color name="colorPrimaryDark">#1565c0</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474f</color>
+    <color name="grey_90">#263238</color>
+    <color name="white">#ffffff</color>
+
+    <color name="black">#FF000000</color>
+    <color name="red_500">#f44336</color>
+
+    <color name="grey">#bfbfbf</color>
+    <color name="link_blue">#4d94ff</color>
+    <color name="ashen_black">#0C0F23</color>
+    <color name="cyan_800_overlay">#a600838f</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.SendChatFilesActivity"
+    android:background="@color/ashen_black">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_gradient_soft">
+
+        <ImageView
+            android:id="@+id/backpress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"></ImageView>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/imagedata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"></ImageView>
+
+    <VideoView
+        android:id="@+id/videodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:backgroundTint="@color/ashen_black"></VideoView>
+
+    <LinearLayout
+        android:id="@+id/MusicPlayerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout  android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/spacing_large">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/musicdata" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/spacing_medium" android:tint="@android:color/white" app:backgroundTint="#2980b9" app:elevation="0dp" app:fabSize="normal" app:rippleColor="@android:color/white" app:srcCompat="@drawable/play_arrow" android:layout_centerInParent="true"/>
+            <ProgressBar android:id="@+id/song_progressbar" android:background="@drawable/circle_shape_music" android:layout_width="65dp" android:layout_height="65dp" android:max="1000" android:progress="0" android:indeterminate="false" android:progressDrawable="@drawable/circular_progress_bar_music" android:minWidth="75dp" android:minHeight="75dp" android:layout_centerInParent="true" style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:id="@+id/btn_send" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" app:tint="@android:color/white" app:backgroundTint="#00897b" app:elevation="1dp" app:fabSize="normal" app:srcCompat="@drawable/ic_baseline_send_24" app:useCompatPadding="false"/>
+
+
+</RelativeLayout>

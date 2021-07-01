@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.AddGroup"
+    android:orientation="vertical"
+    android:background="@color/ashen_black">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/groupIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icons8_add_image_96"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/TextInputLayoutStyle"
+        android:textColorHint="@color/white">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Group Name"
+            android:id="@+id/groupName"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        style="@style/TextInputLayoutStyle"
+        android:textColorHint="@color/white">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:hint="Description"
+            android:id="@+id/groupDesc"
+            android:scrollbars="vertical"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grey" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Create"
+        android:id="@+id/groupCreate"
+        android:background="@drawable/roundbg"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_add_24"
+        android:paddingLeft="10dp"
+        android:drawableTint="@color/white"/>
+
+</LinearLayout>

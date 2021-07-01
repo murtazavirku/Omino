@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsideFragments.NewsFeedFragment"
+    android:background="@color/ashen_black">
+
+
+    <ProgressBar
+        android:id="@+id/postProgress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminateTint="@color/grey_40"
+        android:layout_gravity="center_horizontal"
+        android:foregroundGravity="center_horizontal"></ProgressBar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_feed_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="@color/ashen_black"
+        android:backgroundTint="@color/ashen_black"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:id="@+id/lnI">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_no_internet"
+        android:layout_gravity="center_horizontal"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="No Internet Connection"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"></TextView>
+    <TextView
+        android:id="@+id/tryagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Try Again"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:textColor="#3498db"></TextView>
+
+
+</LinearLayout>
+
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentPieceCollection"
+    android:background="@color/ashen_black">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <ImageButton
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_margin="10dp"
+           android:src="@drawable/ic_baseline_favorite_border_24"
+           android:backgroundTint="@color/ashen_black"
+           android:layout_alignParentLeft="true"
+           android:padding="0dp"
+           android:scaleType="fitXY"
+           app:tint="@color/white"></ImageButton>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:layout_centerInParent="true"
+           android:text="Piece Collection"
+           android:textSize="20dp"
+           android:textStyle="bold"
+           android:textColor="@color/white"></TextView>
+
+       <ImageButton
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_margin="10dp"
+           android:src="@drawable/ic_baseline_filter_list_24"
+           android:backgroundTint="@color/ashen_black"
+           android:layout_alignParentRight="true"
+           android:padding="0dp"
+           android:scaleType="fitXY"
+           app:tint="@color/white"></ImageButton>
+
+
+   </RelativeLayout>
+
+        <View android:background="@color/grey_80" android:layout_marginBottom="20dp" android:layout_width="match_parent" android:layout_height="1px"/>
+
+    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

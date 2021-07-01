@@ -1,0 +1,56 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/addButtonTopTabs"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_filter"
+                    android:layout_centerVertical="true"></ImageView>
+
+                <SearchView
+                    android:id="@+id/mainActivitySearchView"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/userButtonHome"
+                    android:layout_toEndOf="@+id/addButtonTopTabs"
+                    android:searchIcon="@drawable/ic_baseline_search"
+                    android:iconifiedByDefault="true"
+                    android:animateLayoutChanges="true"
+                    android:queryHint="Search"
+                    android:layoutDirection="rtl"
+                    android:closeIcon="@drawable/ic_outline_close_24"
+                    android:theme="@style/ThemeOverlay.SearchView"></SearchView>
+                <ImageView
+                    android:id="@+id/userButtonHome"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:padding="5dp"
+                    android:src="@drawable/male_user"
+                    android:layout_centerVertical="true"></ImageView>
+
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </RelativeLayout>
+
+
+
+</merge>
